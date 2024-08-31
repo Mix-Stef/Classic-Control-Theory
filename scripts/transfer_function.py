@@ -184,16 +184,5 @@ class MIMO_TransferFunction():
     def show_tf(self) -> None:
         pprint(list(map(simplify,self.transfer_function)), use_unicode=False)
 
-
-
-k = sp.Symbol("k")
-d = sp.Symbol("d")
 g1 = SISO_TransferFunction(numerator=[2], denominator=[1, 4, 0])
 g1.show()
-
-
-
-
-
-
-
